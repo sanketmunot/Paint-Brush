@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <%- include('partials/head') %>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <%- include('partials/header') %>
+        <br><br>
+        <div class=" container">
+                <form action="/uploadimage" method="post" enctype="multipart/form-data" class="form-group container">
+                    <input type="file" name="image" class="form-control-file form-control-lg" /><br><br>
+                    <label >Name of image</label>
+                    <input type="text" name="name" class="form-control" required><br>
+                    <button type="submit" class="btn btn-primary">Upload</button>
+                </form>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <%- include('partials/footer') %>
+    </div>
+</body>
+
+</html>
